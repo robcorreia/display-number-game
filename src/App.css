@@ -1,8 +1,11 @@
+/* deixa todos elementos do html com box-sizing border-box */
+/* atributo que soma valor da borda/sombra e padding do elemento junto ao valor total dele */
 * {
   box-sizing: border-box;
 }
 
-.App {
+/* estilização do component App */
+.app {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
@@ -21,6 +24,7 @@
   margin: 0 auto;
 }
 
+/* estilização do título */
 h1 {
   font-size: 36px;
   text-transform: uppercase;
@@ -39,4 +43,10 @@ h1:after {
   width: 205px;
   height: 1px;
   background-color: #cfcfcf;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 24px;
+  }
 }
